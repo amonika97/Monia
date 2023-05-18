@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monia</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+</head>
+<body>
+<header>
+    <nav class="navigation"id="navArea">
+        <div class="container d-flex">
+            <div class="logo">
+                <img  class="logo" src="/images/logo.png" alt="">
+            </div>
+            <ul class="menu d-flex ">
+                <li><a href="#">Home</a></li>
+                <li><a href="Login.html">Login</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="post.html">Post</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="bars">
+                <i  class="fa-solid fa-bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </i>
+            </div>
+            <div class="cart d-flex">
+                <i class="fa-sharp fa-solid fa-cart-shopping fa-xl"></i>
+                <i class="fa-regular fa-heart fa-xl"></i>
+                <i id="searchBtn" class="fa-solid fa-magnifying-glass fa-xl"></i>
+            </div>
+            <div class="search">
+                <span class="icon">
+                    <i id="searchClose"class="fa-solid fa-xmark fa-lg"></i>
+                </span>
+            </div>
+            <div class="searchBox">
+                <input type="text" placeholder="Search...">
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="blog-card">
+    <div class="blog-card-header">
+      <h2 class="blog-card-title">Title of the Blog Post Goes Here</h2>
+      <div class="blog-card-meta">Posted by John Doe on January 1, 2023</div>
+    </div>
+    <div class="blog-card-image">
+      <img src="https://example.com/image.jpg" alt="Blog Post Image">
+    </div>
+    <div class="blog-card-content">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium, sapien nec malesuada suscipit, neque nulla luctus lorem, sit amet aliquet ipsum libero in nunc. Vivamus consectetur a mauris in hendrerit. Vestibulum varius, est ac pulvinar commodo, purus orci lacinia nibh, non auctor sapien sapien vel turpis.</p>
+      <p>Mauris vel sollicitudin tellus, ac vehicula lorem. Fusce eget ipsum euismod, faucibus massa at, sollicitudin mauris. Phasellus sit amet libero et quam interdum scelerisque. Donec ac risus vitae odio commodo convallis.</p>
+      <blockquote>
+        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pretium, sapien nec malesuada suscipit, neque nulla luctus lorem, sit amet aliquet ipsum libero in nunc.”</p>
+        <cite>– John Doe</cite>
+      </blockquote>
+      <p>Vivamus et nisi varius, convallis dolor sed, vestibulum turpis. Nam blandit dapibus neque, sit amet varius lectus volutpat in. Nam euismod turpis ut tristique vestibulum. Curabitur suscipit, turpis sed malesuada bibendum, arcu nisi aliquam felis, in bibendum nisi turpis sed ante.</p>
+    </div>
+  </div>
+<section>
+    <div class="footer_section layout_padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-3 col-md-6">
+                 <div class="social_icon">
+                    <ul>
+                       <li><a href="#"><img src="/images/fb-icon.png" ></a></li>
+                       <li><a href="#"><img src="/images/twitter-icon.png"></a></li>
+                       <li><a href="#"><img src="/images/instagram-icon.png"></a></li>
+                    </ul>
+                 </div>
+                 <p class="text-white">WWW.MONIA.COM</p>
+              </div>
+           </div>
+           <div class="footer_section_2">
+              <div class="row">
+                 <div class="col-lg-3 col-md-6">
+                    <h3 class="company_text">Eco </h3>
+                    <p class="dolor_text">There are many ways to reduce the environmental pollution that stems from your home simply by choosing eco friendly products.</p>
+                 </div>
+                 <div class="col-lg-3 col-md-6">
+                    <h3 class="company_text">Shop</h3>
+                    <p class="dolor_text">All things in Eco Friendly Shop are organic, recycled,reusable, easy to use, up-cycled and environmentally friendly.</p>
+                 </div>
+                 <div class="col-lg-3 col-md-6">
+                    <h3 class="company_text">Company</h3>
+                    <p class="dolor_text">www.monia.com wants to make sustainable shopping so easy everyone does it. Shop eco-friendly products on the one-stop shop for everyone who loves the planet!</p>
+                 </div>
+                 <div class="col-lg-3 col-md-6 contacts">
+                    <h3 class="company_text">Contacts</h3>
+                    <p class="text-white">+37068433806</p>
+                    <p class="text-white">info@monia.com</p>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </div>
+    </div>
+<!-- footer section end -->
+<!-- copyright section start -->
+     <div class="copyright_section">
+        <div class="container">
+           <p class="copyright_text">© 2020 All Rights Reserved.<a href="https://html.design"> Therms&Conditions</a></p>
+        </div>
+     </div>
+</section>
+</footer>
+
+<script src= "/js/script.js"></script>
+
+
+</script>
+       
+</body>
+</html>
+

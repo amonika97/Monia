@@ -1,0 +1,51 @@
+<!--//subscripction starts-->
+<!--<div class="wrapper">
+    <div class="container">
+        <div class="close" for="toggle"><i class="fa-solid fa-xmark"></i></div>
+        <div class="icon"><i class="far fa-envelope"></i></div>
+        <div class="content">
+        <h3>Become a Subscriber</h3>
+        <p>Subscribe to our news ang get latest updates straight to yout inbox</p>
+        <form action="index.php" method="POST">
+            <?php 
+            $userEmail = "";
+            if(isset($_POST['subsribe'])){
+                $userEmail= $_POST['email'];
+                if(filter_var($userEmail, FILTER_VALIDATE_EMAIL)){
+                    $subject = "Thanks For Subscribing us - Monia";
+                    $message = " Thanks for subscribing to our blog. You'll always receive latest updates from Monia website. And we won't share or seel your information to anyone. ";
+                    $sender = "From: monkke@gmail.com";
+                    if(mail($userEmail, $subject, $message, $sender)){
+                        ?>
+                        <div class="alert success">Thanks for subscribing! </div>
+                        <?php
+                        $userEmail = "";
+                    }else{
+                        ?>
+                        <div class="alert error">Failed to send. </div>
+                        <?php
+                        $userEmail = "";
+
+                    }
+                }else{
+                    ?>
+                    <div class="alert error"><?php echo $userEmail ?> is not a valid email.</div>
+                    <?php 
+                     
+                    
+                }
+            };
+            ?>
+            <div class="field">
+                <input type="text" name="email" placeholder="Email Address" required value=""><?php echo $userEmail ?>"
+            </div>
+            <div class="field btn">
+                <input type="Submit" name="subsribe" value="Subscribe">
+            </div>
+            <div class="text">We do not share yout information.</div>
+        </form>
+    </div>
+
+    </div>
+//</div>
+<!--//subscripction ends-->
